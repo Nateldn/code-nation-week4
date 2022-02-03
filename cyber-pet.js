@@ -21,6 +21,13 @@ class MythicalPet {
       return this._energy;
     }
 
+    get takeDrink() {
+      return this._takeDrink;
+    }
+
+    feed() {
+
+    }
 
 //    Generate Random Name for Mythical Pet - through a static method 
     static generateName() {
@@ -32,7 +39,6 @@ class MythicalPet {
 
 }
 
-
 //================== Create Child Classes ======================//
 
 class Dragon extends MythicalPet {
@@ -41,7 +47,6 @@ class Dragon extends MythicalPet {
     this._fireBreath = fireBreath;
   }
 }
-
 
 class Chimera extends MythicalPet {
   constructor (name, roar) {
