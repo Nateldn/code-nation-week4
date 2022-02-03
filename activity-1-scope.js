@@ -1,19 +1,21 @@
+// Write a simple function which logs “Hello Code Nation” to the console.
+// Then write a higher order function which will run our simple function five times, even though you only call it one time.
+// Hint: Pass the simple function as a parameter, and this will involve a for loop.
+
+
 const sayHello = () => {
-    let message = "Hello Code Nation";
-    return message;
+    console.log("Hello Code Nation");
+
 }
 
-console.log(sayHello());
+sayHello();
 
-
-
-const runItFiveTimes = (sayHello, num) => {
-    return sayHello * 5
-    // for (let i = 0; i < 5; i++ ) {
-    //     return higherSayHello[i]
-    //     console.log(higherSayHello[i]);
-    // }
-}
+const runItFiveTimes = sayHello => {
+    for (let i = 0; i = 5; i++)
+    return i;
+} 
+ 
 
 runItFiveTimes();
+
 
