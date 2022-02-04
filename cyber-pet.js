@@ -31,12 +31,11 @@ class MythicalPet {
 
 //    Generate Random Name for Mythical Pet - through a static method 
     static generateName() {
-    const names = ['Gregor', 'Spike', 'Buffy', 'Willow', 'Tara', 'Sport', 'Linda', 'Dave'];
+    const names = ['Gregor', 'Spike', 'Buffy', 'Willow', 'Tara', 'Sport', 'Linda', 'Dave', 'George', 'Tanya', 'Igor', 'Norman', 'Jess', 'Liz', 'Linda'];
     const randomName = names[Math.floor(Math.random() * names.length)];
     return randomName
- 
 }
-
+generateName();
 }
 
 //================== Create Child Classes ======================//
