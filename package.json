@@ -1,0 +1,25 @@
+{
+  "name": "week4",
+  "version": "1.0.0",
+  "description": "Code Nation Test Week 4",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nateldn/code-nation-week4.git"
+  },
+  "author": "Nate K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nateldn/code-nation-week4/issues"
+  },
+  "homepage": "https://github.com/Nateldn/code-nation-week4#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}

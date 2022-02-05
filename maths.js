@@ -15,13 +15,18 @@ const nateAdd = (num1, num2) =>{
         return num1 * num2;
     }
 
+    const copyArray = (array) => {
+        return [... array];
+    }
+
 
 
 module.exports = {
     nateAdd,
     nateSubtract,
     nateDivide,
-    nateMultiple
+    nateMultiple,
+    copyArray
 }
 
 
