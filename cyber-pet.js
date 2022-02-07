@@ -7,9 +7,9 @@ class MythicalPet {
         this._hunger = 0;
         this._thirst = 0;
         //this._happiness = 50;
-        this._energy = 50;
-        this._takeDrink = takeDrink;
-        this._eatFood = eatFood;
+        this._energy = 40;
+        // this._takeDrink = takeDrink;
+        // this._eatFood = eatFood;
         //this._temparature = ['hot', 'too warm', 'warm', 'just right', 'cold', 'too cold', 'freezing'];
     }
 
@@ -21,21 +21,24 @@ class MythicalPet {
       return this._energy;
     }
 
-    get takeDrink() {
-      return this._takeDrink;
+     takeDrink() {
+      this._energy += 20;
     }
 
-    feed() {
-
+     eatFood() {
+     this._energy += 20;
     }
+
+    
 
 //    Generate Random Name for Mythical Pet - through a static method 
     static generateName() {
-    const names = ['Gregor', 'Spike', 'Buffy', 'Willow', 'Tara', 'Sport', 'Linda', 'Dave', 'George', 'Tanya', 'Igor', 'Norman', 'Jess', 'Liz', 'Linda'];
+    const names = ['Gregor', 'Spike', 'Buffy', 'Willow', 'Tara', 'Sport', 'Linda', 'Dave', 'George', 'Tanya', 'Igor', 'Norman', 'Jess', 'Liz', 'Linda', 'Fluffy', "Tiddles"];
     const randomName = names[Math.floor(Math.random() * names.length)];
-    return randomName
+    console.log(randomName);
+   
 }
-generateName();
+
 }
 
 //================== Create Child Classes ======================//
@@ -59,6 +62,14 @@ class Grifin extends MythicalPet {
   constructor (name, treasure) {
     super(name);
     this._treasure = treasure;
+  }
+}
+
+
+class GiantSeaSerpent extends MythicalPet {
+  constructor (name, hiss) {
+    super(name);
+    this._hiss = hiss;
   }
 }
 

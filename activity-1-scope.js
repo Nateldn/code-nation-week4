@@ -4,18 +4,26 @@
 
 
 const sayHello = () => {
-    console.log("Hello Code Nation");
-
+    return ("Hello Code Nation");
 }
 
 sayHello();
 
-const runItFiveTimes = sayHello => {
-    for (let i = 0; i = 5; i++)
-    return i;
+const runItFiveTimes = (parameter) => {
+    for (let i = 1; i <= 4; i++)
+   parameter();
 } 
  
 
-runItFiveTimes();
+runItFiveTimes(sayHello); // run higher order function
 
 
+let myString = "Some string that I'd like to log multiple times."
+
+const logItMultipleTimes = (theInput)=> {
+    for (let i = 0; i <= 10; i++) {
+        console.log(theInput);
+    }    
+} 
+
+logItMultipleTimes(myString);
